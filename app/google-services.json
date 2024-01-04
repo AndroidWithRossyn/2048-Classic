@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "152032854881",
+    "project_id": "simple-18168",
+    "storage_bucket": "simple-18168.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:152032854881:android:4ea9b852041b1a1849bb20",
+        "android_client_info": {
+          "package_name": "com.banrossyn.merge2048"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCAuC4zRs3lAkJFVbSaOPi8ReMnFritIi4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

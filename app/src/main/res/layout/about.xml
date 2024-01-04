@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/game_background_light"
+    android:backgroundTint="@color/background_tint"
+    android:backgroundTintMode="multiply"
+    tools:context=".AboutActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imBack"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_back"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/black_text" />
+
+
+        <TextView
+            android:id="@+id/tv_create_board_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textColor="@color/black_text"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imBack"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/version"
+            android:textColor="@color/black_text"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textfrist"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/textfrist"
+                    android:textAlignment="center"
+                    android:textColor="@color/black_text"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/fristimg"
+                    android:layout_width="match_parent"
+                    android:layout_height="284dp"
+                    app:srcCompat="@drawable/board_6x6" />
+
+                <TextView
+                    android:id="@+id/textsecond"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/textsecond"
+                    android:textAlignment="center"
+                    android:textColor="@color/black_text"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/secondimg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="284dp"
+                    app:srcCompat="@drawable/shuffle_mode_1" />
+
+                <TextView
+                    android:id="@+id/textThird"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/textthird"
+                    android:textAlignment="center"
+                    android:textColor="@color/black_text"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/thirdimg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="284dp"
+                    app:srcCompat="@drawable/block_mode" />
+
+                <TextView
+                    android:id="@+id/textforth"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/textforth"
+                    android:textAlignment="center"
+                    android:textColor="@color/black_text"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/forthimg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="284dp"
+                    app:srcCompat="@drawable/shuffle_mode_3" />
+
+                <TextView
+                    android:id="@+id/textfifth"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/textfive"
+                    android:textAlignment="center"
+                    android:textColor="@color/black_text"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/fiveimg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="284dp"
+                    app:srcCompat="@drawable/board_4x4" />
+
+                <TextView
+                    android:id="@+id/textsix"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/textsix"
+                    android:textAlignment="center"
+                    android:textColor="@color/black_text"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textseven"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="50dp"
+                    android:gravity="right"
+                    android:text="@string/author"
+                    android:textColor="#E6221717"
+                    android:textSize="15sp" />
+
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
